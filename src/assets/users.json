@@ -1,232 +1,173 @@
 [
   {
     "id": 1,
-    "name": "Leanne Graham",
-    "username": "Bret",
-    "email": "Sincere@april.biz",
+    "name": "Sukanta Dhar",
+    "username": "dhar",
+    "email": "sukanta@dhar.in",
     "address": {
       "street": "Kulas Light",
       "suite": "Apt. 556",
-      "city": "Gwenborough",
-      "zipcode": "92998-3874",
-      "geo": {
-        "lat": "-37.3159",
-        "lng": "81.1496"
-      }
+      "city": "Ahmedabad",
+      "zipcode": "92998-3874"
     },
     "phone": "1-770-736-8031 x56442",
     "website": "hildegard.org",
     "company": {
-      "name": "Romaguera-Crona",
-      "catchPhrase": "Multi-layered client-server neural-net",
-      "bs": "harness real-time e-markets"
+      "name": "TKS Technology"
     }
   },
   {
     "id": 2,
-    "name": "Ervin Howell",
-    "username": "Antonette",
-    "email": "Shanna@melissa.tv",
+    "name": "Irene Paul",
+    "username": "irene",
+    "email": "irene@paul.in",
     "address": {
       "street": "Victor Plains",
       "suite": "Suite 879",
-      "city": "Wisokyburgh",
-      "zipcode": "90566-7771",
-      "geo": {
-        "lat": "-43.9509",
-        "lng": "-34.4618"
-      }
+      "city": "Lucknow",
+      "zipcode": "90566-7771"
     },
     "phone": "010-692-6593 x09125",
     "website": "anastasia.net",
     "company": {
-      "name": "Deckow-Crist",
-      "catchPhrase": "Proactive didactic contingency",
-      "bs": "synergize scalable supply-chains"
+      "name": "SKF Technology"
     }
   },
   {
     "id": 3,
-    "name": "Clementine Bauch",
-    "username": "Samantha",
-    "email": "Nathan@yesenia.net",
+    "name": "John De",
+    "username": "Bret",
+    "email": "john@paul.in",
     "address": {
-      "street": "Douglas Extension",
-      "suite": "Suite 847",
-      "city": "McKenziehaven",
-      "zipcode": "59590-4157",
-      "geo": {
-        "lat": "-68.6102",
-        "lng": "-47.0653"
-      }
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
+      "city": "Mumbai",
+      "zipcode": "92998-3874"
     },
-    "phone": "1-463-123-4447",
-    "website": "ramiro.info",
+    "phone": "1-770-736-8031 x56442",
+    "website": "hildegard.org",
     "company": {
-      "name": "Romaguera-Jacobson",
-      "catchPhrase": "Face to face bifurcated interface",
-      "bs": "e-enable strategic applications"
+      "name": "Boring Company"
     }
   },
   {
     "id": 4,
-    "name": "Patricia Lebsack",
-    "username": "Karianne",
-    "email": "Julianne.OConner@kory.org",
+    "name": "Neel Patel",
+    "username": "neel",
+    "email": "neel@patel.in",
     "address": {
       "street": "Hoeger Mall",
       "suite": "Apt. 692",
-      "city": "South Elvis",
-      "zipcode": "53919-4257",
-      "geo": {
-        "lat": "29.4572",
-        "lng": "-164.2990"
-      }
+      "city": "Pune",
+      "zipcode": "53919-4257"
     },
-    "phone": "493-170-9623 x156",
+    "phone": "090-678950",
     "website": "kale.biz",
     "company": {
-      "name": "Robel-Corkery",
-      "catchPhrase": "Multi-tiered zero tolerance productivity",
-      "bs": "transition cutting-edge web services"
+      "name": "Neel Patel"
     }
   },
   {
     "id": 5,
-    "name": "Chelsey Dietrich",
+    "name": "Akshay Pilot",
     "username": "Kamren",
-    "email": "Lucio_Hettinger@annie.ca",
+    "email": "akshay@pilot.in",
     "address": {
       "street": "Skiles Walks",
       "suite": "Suite 351",
-      "city": "Roscoeview",
-      "zipcode": "33263",
-      "geo": {
-        "lat": "-31.8129",
-        "lng": "62.5342"
-      }
+      "city": "Kolkata",
+      "zipcode": "33263"
     },
     "phone": "(254)954-1289",
     "website": "demarco.info",
     "company": {
-      "name": "Keebler LLC",
-      "catchPhrase": "User-centric fault-tolerant solution",
-      "bs": "revolutionize end-to-end systems"
+      "name": "HARMAN LLP"
     }
   },
   {
     "id": 6,
-    "name": "Mrs. Dennis Schulist",
+    "name": "Sukbir Iot",
     "username": "Leopoldo_Corkery",
-    "email": "Karley_Dach@jasper.info",
+    "email": "sukbir@iot.in",
     "address": {
       "street": "Norberto Crossing",
       "suite": "Apt. 950",
-      "city": "South Christy",
-      "zipcode": "23505-1337",
-      "geo": {
-        "lat": "-71.4197",
-        "lng": "71.7478"
-      }
+      "city": "Chandigarh",
+      "zipcode": "23505-1337"
     },
     "phone": "1-477-935-8478 x6430",
     "website": "ola.org",
     "company": {
-      "name": "Considine-Lockman",
-      "catchPhrase": "Synchronised bottom-line interface",
-      "bs": "e-enable innovative applications"
+      "name": "Sukrit-iot"
     }
   },
   {
     "id": 7,
-    "name": "Kurtis Weissnat",
-    "username": "Elwyn.Skiles",
-    "email": "Telly.Hoeger@billy.biz",
+    "name": "Kirti Debbarma",
+    "username": "kirti.debbarma",
+    "email": "kirti@debbarma.in",
     "address": {
       "street": "Rex Trail",
       "suite": "Suite 280",
-      "city": "Howemouth",
-      "zipcode": "58804-1099",
-      "geo": {
-        "lat": "24.8918",
-        "lng": "21.8984"
-      }
+      "city": "Chennai",
+      "zipcode": "58804-1099"
     },
     "phone": "210.067.6132",
-    "website": "elvis.io",
+    "website": "kirti.io",
     "company": {
-      "name": "Johns Group",
-      "catchPhrase": "Configurable multimedia task-force",
-      "bs": "generate enterprise e-tailers"
+      "name": "Johns n Johnson"
     }
   },
   {
     "id": 8,
-    "name": "Nicholas Runolfsdottir V",
+    "name": "Kirti Rao",
     "username": "Maxime_Nienow",
-    "email": "Sherwood@rosamond.me",
+    "email": "kirti@rao.in",
     "address": {
       "street": "Ellsworth Summit",
       "suite": "Suite 729",
-      "city": "Aliyaview",
-      "zipcode": "45169",
-      "geo": {
-        "lat": "-14.3990",
-        "lng": "-120.7677"
-      }
+      "city": "Pune",
+      "zipcode": "45169"
     },
     "phone": "586.493.6943 x140",
     "website": "jacynthe.com",
     "company": {
-      "name": "Abernathy Group",
-      "catchPhrase": "Implemented secondary concept",
-      "bs": "e-enable extensible e-tailers"
+      "name": "Ambi Pure"
     }
   },
   {
     "id": 9,
-    "name": "Glenna Reichert",
+    "name": "Guliya Ram",
     "username": "Delphine",
-    "email": "Chaim_McDermott@dana.io",
+    "email": "guliya@ram.io",
     "address": {
       "street": "Dayna Park",
       "suite": "Suite 449",
-      "city": "Bartholomebury",
-      "zipcode": "76495-3109",
-      "geo": {
-        "lat": "24.6463",
-        "lng": "-168.8889"
-      }
+      "city": "Goa",
+      "zipcode": "76495-3109"
     },
     "phone": "(775)976-6794 x41206",
     "website": "conrad.com",
     "company": {
-      "name": "Yost and Sons",
-      "catchPhrase": "Switchable contextually-based project",
-      "bs": "aggregate real-time technologies"
+      "name": "Yum Sum Technology"
+
     }
   },
   {
     "id": 10,
-    "name": "Clementina DuBuque",
+    "name": "Cliyopetra Das",
     "username": "Moriah.Stanton",
-    "email": "Rey.Padberg@karina.biz",
+    "email": "cliyo.das@das.in",
     "address": {
       "street": "Kattie Turnpike",
       "suite": "Suite 198",
-      "city": "Lebsackbury",
-      "zipcode": "31428-2261",
-      "geo": {
-        "lat": "-38.2386",
-        "lng": "57.2232"
-      }
+      "city": "Goa",
+      "zipcode": "31428-2261"
     },
     "phone": "024-648-3804",
     "website": "ambrose.net",
     "company": {
-      "name": "Hoeger LLC",
-      "catchPhrase": "Centralized empowering task-force",
-      "bs": "target end-to-end models"
+      "name": "Hoeger LLC"
     }
   }
 ]

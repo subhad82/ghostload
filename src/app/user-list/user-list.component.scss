@@ -4,7 +4,7 @@ $row-gap: 15px;
 $min-content-height: 459px;
 
 :host {
-  display: block;
+ 
   position: relative;
   overflow: hidden;
 }
@@ -69,16 +69,23 @@ $min-content-height: 459px;
   }
 
   h3 {
-    color: #8cc5d6;
+    color: #0f12d1;
     font-weight: 500;
     font-size: 1.1em;
+  }
+  h4 {
+    color: indianred;
+    font-weight: 500;
+    font-size: 0.8em;
+    line-height: 0px;
+
   }
 
   p {
     font-size: 0.90em;
 
     .company {
-      color: rgb(148, 148, 148);
+      color: rgb(201, 18, 18);
     }
     margin-bottom: 25px;  
   }
@@ -166,4 +173,24 @@ $small-spinner-dimensions: $main-spinner-dimensions * 0.7; //width and height of
     left: 0;
     animation: scale 1s linear 0s infinite alternate-reverse;
   }
+}
+
+.border-box{
+  -webkit-box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.1);
+margin: 10px 0px;
+padding: 4px;
+}
+.border-box:hover{
+
+background-color: #ebf9fa;
+
+
+}
+.catalogue{
+  display: block !important;
+  background-color: greenyellow;padding: 10px;
+  color: white;
+
 }

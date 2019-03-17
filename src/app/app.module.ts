@@ -8,7 +8,14 @@ import { CustomMaterialModule } from './custom-material.module';
 
 import { AppComponent } from './app-shell/app.component';
 import { SvgIconComponent } from './utils/svg-icon/svg-icon.component';
-
+import {
+  ReactiveFormsModule,
+  FormsModule,
+  FormGroup,
+  FormControl,
+  Validators,
+  FormBuilder
+} from '@angular/forms';
 import { UsersService } from './users/users.service';
 import { UserListComponent } from './user-list/user-list.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
@@ -21,6 +28,8 @@ import { environment } from '../environments/environment';
     HttpClientModule,
     CustomMaterialModule,
     FlexLayoutModule,
+    FormsModule,
+    ReactiveFormsModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   declarations: [

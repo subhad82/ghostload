@@ -1,6 +1,7 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { trigger } from '@angular/animations';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 import { Observable, of} from 'rxjs';
 import { delay, map, tap, startWith } from 'rxjs/operators';
@@ -24,8 +25,9 @@ import { UsersService, User, AsyncItem, makeAsyncItem, AsyncItemState, queryStat
 export class UserListComponent {
   state = queryState;                   // access to determine async state
   users$ = this.service.loadUsers();    // users enclosed in AsyncItem wrappers
-
-  constructor(public service: UsersService) { }
+  model:any;
+  constructor(public service: UsersService ) { 
+  }
 
   /**
    * Use 'uid' if not a ghost... otherwise just create a number...
@@ -33,7 +35,11 @@ export class UserListComponent {
   trackByFn(index:number, user: AsyncItem<User>) {
     return user.data ? user.data.id : 0; 
   }
+  addUp(value) {
+    alert('SUCCESS!! :-)\n\n' + value);
+  }
 
+  
 }
 
 

@@ -122,7 +122,7 @@ function wrapAsAsyncItems(list) {
 function simulatePartialLoads(list) {
   return list.map((it, i) =>{
      const hasData = !!it.data;
-     const state = (hasData && ((i+1) % 3)) ?  AsyncItemState.LOADED : AsyncItemState.LOADING; 
+     const state = (hasData && ((i+1))) ?  AsyncItemState.LOADED : AsyncItemState.LOADING; 
       
      return makeAsyncItem(state == AsyncItemState.LOADING ? null : it.data, state);
   }); 
