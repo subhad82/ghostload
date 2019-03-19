@@ -18,12 +18,22 @@ $min-content-height: 459px;
   top: 30%;
   left: 40%;
 }
+.red-color{
+  background-color: red;
+  color: white;
+}
 
 .list {
   padding-top: 24px;
 }
-
-
+.alignment-add-member {
+  float: right;
+  margin-top: -23px;
+  background-color: red;
+}
+.m-t-2 {
+  margin-top: 20px;
+}
 .user {
   overflow: hidden;
   opacity: 1.0;  

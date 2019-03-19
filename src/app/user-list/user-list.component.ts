@@ -25,19 +25,38 @@ import { UsersService, User, AsyncItem, makeAsyncItem, AsyncItemState, queryStat
 export class UserListComponent {
   state = queryState;                   // access to determine async state
   users$ = this.service.loadUsers();    // users enclosed in AsyncItem wrappers
-  model:any;
-  constructor(public service: UsersService ) { 
-  }
+  store : any; tempStore = {};
+  showAddMember = false;
+  constructor(public service: UsersService   , private http: HttpClient ) { 
+    this.helpContent ();
+    }
 
   /**
    * Use 'uid' if not a ghost... otherwise just create a number...
    */ 
   trackByFn(index:number, user: AsyncItem<User>) {
     return user.data ? user.data.id : 0; 
+    
   }
-  addUp(value) {
-    alert('SUCCESS!! :-)\n\n' + value);
+
+  helpContent() {
+    this.http.get('assets/users.json').subscribe(data => {
+     this.store = data;
+    //  console.log(this.store);
+    })
   }
+  register(form) {
+    this.service.loadUsers();
+    console.log(form.value);
+    this.tempStore = form.value;
+    this.showAddMember = false;
+
+    // console.log(this.storraage.push(this.tempStore));
+}
+
+addMember(){
+  this.showAddMember = true;
+}
 
   
 }

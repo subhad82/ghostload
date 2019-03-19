@@ -10,14 +10,14 @@ import { AsyncItem, makeAsyncItem, AsyncItemState } from './model/async-item';
 import { User, AsyncUserList } from './model/user';
 
 const URL_MOCK_USERS = 'assets/users.json';
-const RESPONSE_DELAY = 1750;
+const RESPONSE_DELAY = 1800;
 
 
 @Injectable()
 export class UsersService {
   private request: Subscription;
   private announcer = new BehaviorSubject<AsyncUserList>(buildGhosts());
-  
+
   users$ = this.announcer.asObservable();
 
   constructor(private http: HttpClient) { }
@@ -74,13 +74,16 @@ export class UsersService {
 
     this.request && this.request.unsubscribe();
     this.request = response$.pipe(
+    
           delay(RESPONSE_DELAY),        // Simulating network latency 
           map(injectAvatars ),          // add cartoon avatars 
           map(wrapAsAsyncItems),        // add AsyncItem wrappers
           map(simulatePartialLoads)     // simulate partial response 
         )
         .subscribe(list => {
+      
             this.announcer.next(list);
+       
         });
   }
 

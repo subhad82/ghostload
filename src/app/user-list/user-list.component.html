@@ -1,25 +1,50 @@
 
 
 
-<div  fxLayout="row wrap">
- 
+<div  fxLayout="row wrap" *ngIf="showAddMember">
+  <div class="container">
+    <div class="logo">Add a new member!</div>
+    <div class="register-item">
+      <form #myform="ngForm" (ngSubmit)="register(myform)" class="form form-register">
+
+        <div class="form-field">
+              <label class="user" for="register-username"><span class="hidden">Name</span></label>
+              <input name="name" id="register-username" type="email" class="form-input" placeholder="Name" ngModel required>
+        </div>
+        <div class="form-field">
+          <label class="user" for="register-email"><span class="hidden">Email</span></label>
+          <input name="email" id="register-email" type="email" class="form-input" placeholder="Email" ngModel required>
+        </div>
+
+        <div class="form-field">
+          <label class="lock" for="register-password"><span class="hidden">Company</span></label>
+          <input name="password" id="register-password" type="" class="form-input" placeholder="company" ngModel required>
+        </div>
+
+        <div class="form-field m-t-2">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+</div>
       
 </div>
 
 <div fxLayout="row wrap" class="catalogue text-center">
 <div class="text-center">Catalogue</div> 
+<button class="alignment-add-member" (click)=addMember()>Add Member</button>
 </div>
 <div> 
   <div *ngIf='users$ | async as users' [@fadeIn]="users.length"  fxLayout="row wrap" class="list">
     <div *ngFor='let user of users; trackBy: trackByFn'
          [class.ghost]="state(user).isLoading()"  
          [class.user]="state(user).isLoaded()"                 
-          class=" col-md-4 no-padding" >
+          class=" col-xs-12 col-md-4 no-padding" (click)="service.loadUsers()" >
           <div class="border-box">
 
         
             <div class="avatar" >
-              <svg-icon [icon]="user.data?.avatar" *ngIf="!state(user).isPolling()"></svg-icon> 
+              <svg-icon [icon]="user.data?.avatar" (click)="service.loadUsers()" *ngIf="!state(user).isPolling()"></svg-icon> 
              
             </div>
             <div class="lines" [class.polling]="state(user).isPolling()" >
@@ -33,12 +58,12 @@
 
 
 
-<div class="footer" style="padding-left:35px; padding-right:35px;">
+<!-- <div class="footer" style="padding-left:35px; padding-right:35px;">
 
-  <div fxLayout fxLayoutAlign="left center" fxLayoutGap="25px" style="margin-top:-15px;">
-    <button mat-flat-button color="primary" (click)="service.loadUsers()">Reload All</button>
+  <div fxLayout fxLayoutAlign="left center" fxLayoutGap="50px" style="margin-top:-15px;">
+    <button  class="red-color" (click)="service.loadUsers()">Refresh</button>
     
     
   </div>
-</div>
+</div> -->
 </div>
